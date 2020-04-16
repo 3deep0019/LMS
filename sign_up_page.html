@@ -157,7 +157,7 @@
   }    
   .box {
       
-      height: 600px;
+      height: 700px;
       width: 90%;
       background-color:#31384e;
       margin: 0 auto;
@@ -190,7 +190,7 @@
   margin-left: 25px;
 }
     input{
-    height: 60px;
+    height: 50px;
     width: 450px;
     background-color:white;
     margin: 5px;
@@ -200,6 +200,11 @@
 }
 input::placeholder{
     font-size: 15px;
+}
+
+#warning{
+  color: white;
+  margin-left:6px;
 }
   footer{
     display: none;
@@ -246,8 +251,8 @@ input::placeholder{
 
   .box {
       
-      height: 400px;
-      width: 90%;
+      height: 500px;
+      width: 70%;
       background-color:#31384e;
       margin: 0 auto;
       display: flex;
@@ -269,7 +274,7 @@ input::placeholder{
   }
 
    input{
-    height: 35px;
+    height: 30px;
     width: 500px;
     margin: 5px;
     border:none;
@@ -316,10 +321,14 @@ input::placeholder{
                  <div class="login">
                   <input type="text" name="fullname" placeholder="Full Name" required="">
                   <input type="email" name="email" placeholder="E-mail" required="">
-                  <input type="number" name="mobile_no" placeholder="Mobile No" required="">
+                  <input type="password" id="passwordd" name="password" placeholder="Password" required="" oninput="pass()">
+                  <input type="password" id="confirmpassword" name="password" placeholder="Confirm Password" required="" oninput ="confirmPassword()">
+                  <p id="warning"></p>
+                  <input type="number" name="mobile_no" placeholder="Mobile No" required="" >
                   <input type="number" name="year" placeholder="Year" required="">
                   <input type="text" name="semester" placeholder="Semester" required="">
                   <input type="text" name="department" placeholder="Department" required="">
+                  <p id="warning"></p>
                   <button>Sign up</button>
               </form>
                </div>   
@@ -330,5 +339,6 @@ input::placeholder{
                 <h1 style="text-align: center;padding-top: 30px;">&copy; 2019 Group E</h1>
         </footer>
      </div>
+     <script type="text/javascript" src="sign_up_page.js"></script>
 </body>
 </html>
