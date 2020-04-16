@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LMS</title>
+    <style type="text/css">
+      html, body, div, span, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  abbr, address, cite, code,
+  del, dfn, em, img, ins, kbd, q, samp,
+  small, strong, sub, sup, var,
+  b, i,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section, summary,
+  time, mark, audio, video {
+      margin:0;
+      padding:0;
+      border:0;
+      outline:0;
+      font-size:100%;
+      vertical-align:baseline;
+      background:transparent;
+  }
+
+  body {
+      line-height:1;
+  }
+
+  article,aside,details,figcaption,figure,
+  footer,header,hgroup,menu,nav,section {
+      display:block;
+  }
+
+  nav ul {
+      list-style:none;
+  }
+
+  blockquote, q {
+      quotes:none;
+  }
+
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content:'';
+      content:none;
+  }
+
+  a {
+      margin:0;
+      padding:0;
+      font-size:100%;
+      vertical-align:baseline;
+      background:transparent;
+  }
+
+  /* change colours to suit your needs */
+  ins {
+      background-color:#ff9;
+      color:#000;
+      text-decoration:none;
+  }
+
+  /* change colours to suit your needs */
+  mark {
+      background-color:#ff9;
+      color:#000;
+      font-style:italic;
+      font-weight:bold;
+  }
+
+  del {
+      text-decoration: line-through;
+  }
+
+  abbr[title], dfn[title] {
+      border-bottom:1px dotted;
+      cursor:help;
+  }
+
+  table {
+      border-collapse:collapse;
+      border-spacing:0;
+  }
+
+  hr {
+      display:block;
+      height:1px;
+      border:0;  
+      border-top:1px solid #cccccc;
+      margin:1em 0;
+      padding:0;
+  }
+
+  input, select {
+      vertical-align:middle;
+  }
+
+   * {
+      text-decoration: none;
+  }
+  header{
+      background:#b3daff;
+      width: 100%;
+      height: 150px;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img{
+      height: 100px;
+      padding: 10px 10px 0;
+  }
+  .logo h1{
+      display: none;
+  }
+
+  header nav ul {
+      display: block;
+      width: fit-content;
+      margin: 15px auto;
+      overflow: hidden;
+  }
+
+  header nav ul li {
+      display: inline;
+  }
+          
+  header nav ul li a {
+      font-size: 15px;
+      color: #111;
+      margin: 0
+      list-style: none;
+      padding: 0 16px;
+      text-transform: uppercase;
+  }
+
+  .sec_homepage{
+      width: 100%;
+      height:calc(100vh - 150px);
+      background-image: url(library_pic.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.9;
+  }    
+  .box {
+      
+      height: 300px;
+      width: 90%;
+      background-color:#31384e;
+      margin: 0 auto;
+      opacity: .5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .box h1{
+      font-size: 30px;
+      color: white;
+  }
+  footer{
+    display: none;
+  }
+
+  @media screen and (min-width: 1000px)
+{
+  header{
+      background:#b3daff;
+      width: 100%;
+      height: 170px;
+  }
+
+  .logo{
+    display: block;
+  }
+
+  .logo img{
+      height: 150px;
+      padding: 10px 30px 0;
+  }
+  .logo h1{
+      font-size: 30px;
+      padding-left: 55px;
+  }
+
+  header nav ul {
+      display: block;
+      float: right;
+      margin-top: -90px;
+      width: fit-content;
+      overflow: hidden;
+  }
+
+  header nav ul li {
+      display: inline-block;
+      float:left;
+  }
+          
+  header nav ul li a {
+      font-size: 23px;
+      color: #111;
+      list-style: none;
+      padding: 0 16px;
+      text-transform: uppercase;
+  }
+
+  .box {
+      
+      height: 200px;
+      width: 90%;
+      background-color:#31384e;
+      margin: 0 auto;
+      opacity: .5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .sec_homepage{
+      width: 100%;
+      height:calc(90vh - 170px);
+      background-image: url(library_pic.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.9;
+  }
+  footer{
+    display: block;
+    background:#b3daff;
+    height: calc(100vh - 90vh); 
+  }    
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Logo.png">
+      <h1>Library Management System</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin_login.html">Admin-Login</a></li>
+        <li><a href="student_login.html">Student-Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="sec_homepage">
+        <div class="box">
+          <h1>Welcome to Library</h1>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+                <h1 style="text-align: center;padding-top: 30px;">&copy; 2019 Group E</h1>
+        </footer>
+</body>
+</html>
